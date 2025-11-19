@@ -1,6 +1,7 @@
 # Lab Requirements
 
-Your portfolio website must meet the following requirements:
+- [Link to slides](https://github.com/Adrian-A/Senior-Design-Lab-3/blob/main/documents/Lab%2003%20-%20UI%20design.pdf)
+- [Link to pdf](https://github.com/Adrian-A/Senior-Design-Lab-3/blob/main/documents/Lab3_2025Fall.pdf)
 
 ## Hosting
 - The website should be hosted publicly.
