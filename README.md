@@ -34,6 +34,7 @@
   - These saved messages should be viewable as part of the protected content.
 
 ## Visual Design
+- Storyboards: https://www.figma.com/board/yChA6qnFslbJUcmbP751ij/Senior-Design-Lab-3?node-id=0-1&p=f&t=XYkgwEriwQ0FsM35-0
 - Use a **Black & Gold** color scheme.
   - Follow the University of Iowa’s branding standards: [https://brand.uiowa.edu/fonts](https://brand.uiowa.edu/fonts)
   - Do **not** present the site as an official university website.
