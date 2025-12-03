@@ -1,5 +1,7 @@
 # Lab Requirements
 
+- [Link to Website](http://myweb.uiowa.edu/adralvarez/)
+- [Link to Figma](https://www.figma.com/board/yChA6qnFslbJUcmbP751ij/Senior-Design-Lab-3?node-id=0-1&p=f&t=HcJ3Y942Bw9mtxUw-0)
 - [Link to slides](https://github.com/Adrian-A/Senior-Design-Lab-3/blob/main/documents/Lab%2003%20-%20UI%20design.pdf)
 - [Link to pdf](https://github.com/Adrian-A/Senior-Design-Lab-3/blob/main/documents/Lab3_2025Fall.pdf)
 

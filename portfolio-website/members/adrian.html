@@ -8,9 +8,11 @@
 
 <nav>
     <a href="../index.html">Home</a>
+    <a href="bella.html">Bella</a>
     <a href="adrian.html">Adrian</a>
-    <a href="../members/carter.html">Carter</a>
-    <a href="#" onclick="showLogin()">Protected</a>
+    <a href="seth.html">Seth</a>
+    <a href="emma.html">Emma</a>
+    <a href="../admin.html">Admin</a>
 </nav>
 
 <div class="container">
@@ -32,7 +34,12 @@
     <button onclick="sendMessage('Adrian')">Send Message</button>
 </div>
 
+<!-- Firebase scripts (note the path: "../js/") -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="../js/firebase.js"></script>
+
+<!-- Member-page scripts -->
 <script src="../js/messages.js"></script>
 <script src="../js/auth.js"></script>
 

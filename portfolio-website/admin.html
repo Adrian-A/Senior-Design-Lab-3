@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Team Portfolio</title>
+    <title>Admin Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,27 +12,23 @@
     <a href="members/adrian.html">Adrian</a>
     <a href="members/seth.html">Seth</a>
     <a href="members/emma.html">Emma</a>
-    <a href="admin.html">Admin</a>
 </nav>
 
 <div class="container">
-    <h1>Welcome to Our Team Portfolio</h1>
-    <p>Explore our projects, achievements, and contact us!</p>
-</div>
+    <h1>Admin Login</h1>
 
-<!-- Password popup -->
-<div id="loginBox" class="container" style="display:none;">
-    <h2>Enter Password</h2>
+    <label>Enter Password:</label>
     <input type="password" id="passwordInput">
-    <button onclick="attemptLogin()">Submit</button>
+
+    <button onclick="attemptLogin()">Login</button>
 </div>
 
-<!-- Firebase scripts go here -->
+<!-- Firebase Scripts -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="js/firebase.js"></script>
 
-<!-- Your JS -->
+<!-- Auth logic -->
 <script src="js/auth.js"></script>
 
 </body>
