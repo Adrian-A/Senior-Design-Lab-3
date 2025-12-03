@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="members/adrian.html">Adrian</a>
+    <a href="members/carter.html">Carter</a>
+    <a href="#" onclick="showLogin()">Protected Content</a>
+</nav>
+
+<div class="container">
+    <h1>Welcome to Our Team Portfolio</h1>
+    <p>Explore our projects, achievements, and contact us!</p>
+</div>
+
+<!-- Password popup -->
+<div id="loginBox" class="container" style="display:none;">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput">
+    <button onclick="attemptLogin()">Submit</button>
+</div>
+
+<script src="js/firebase.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

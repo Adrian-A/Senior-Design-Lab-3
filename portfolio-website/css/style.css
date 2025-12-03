@@ -1,0 +1,68 @@
+/* University of Iowa Black & Gold Theme */
+body {
+    background-color: #000000;
+    color: #FFCD00;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFCD00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Main content container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #FFCD00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #333;
+    color: #FFCD00;
+}
+
+label {
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #FFCD00;
+}
