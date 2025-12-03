@@ -8,19 +8,17 @@
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="members/bella.html">Bella</a>
-    <a href="members/adrian.html">Adrian</a>
-    <a href="members/seth.html">Seth</a>
-    <a href="members/emma.html">Emma</a>
-    <a href="admin.html">Admin</a>
+<nav class="navbar">
+    <div class="nav-container">
+        <h1 class="nav-title">Senior Design Team</h1>
+        <a href="admin.html" class="vault-btn">The Vault</a>
+    </div>
 </nav>
 
-<div class="container">
-    <div class="hero">
-        <h1>Team Portfolio</h1>
-        <p>Meet our talented team members and explore their work</p>
+<main class="main-container">
+    <div class="hero-section">
+        <h2 class="hero-title">Meet Our Team</h2>
+        <p class="hero-subtitle">A group of passionate professionals dedicated to delivering excellence in everything we do.</p>
     </div>
 
     <div class="team-grid">
@@ -30,8 +28,7 @@
             </div>
             <div class="team-card-content">
                 <h3>Bella</h3>
-                <p class="role">Team Member</p>
-                <p class="description">Click to view full profile and contact</p>
+                <p class="team-role">Team Member</p>
             </div>
         </a>
 
@@ -41,8 +38,7 @@
             </div>
             <div class="team-card-content">
                 <h3>Adrian</h3>
-                <p class="role">Team Member</p>
-                <p class="description">Click to view full profile and contact</p>
+                <p class="team-role">Team Member</p>
             </div>
         </a>
 
@@ -52,8 +48,7 @@
             </div>
             <div class="team-card-content">
                 <h3>Seth</h3>
-                <p class="role">Team Member</p>
-                <p class="description">Click to view full profile and contact</p>
+                <p class="team-role">Team Member</p>
             </div>
         </a>
 
@@ -63,12 +58,11 @@
             </div>
             <div class="team-card-content">
                 <h3>Emma</h3>
-                <p class="role">Team Member</p>
-                <p class="description">Click to view full profile and contact</p>
+                <p class="team-role">Team Member</p>
             </div>
         </a>
     </div>
-</div>
+</main>
 
 <!-- Firebase scripts go here -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>

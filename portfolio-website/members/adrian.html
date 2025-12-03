@@ -8,49 +8,68 @@
 </head>
 <body>
 
-<nav>
-    <a href="../index.html">Home</a>
-    <a href="bella.html">Bella</a>
-    <a href="adrian.html">Adrian</a>
-    <a href="seth.html">Seth</a>
-    <a href="emma.html">Emma</a>
-    <a href="../admin.html">Admin</a>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="back-link">
+            <span class="arrow">←</span> Back to Team
+        </a>
+    </div>
 </nav>
 
-<div class="container">
-    <a href="../index.html" class="back-btn">← Back to Team</a>
+<main class="main-container">
+    <div class="member-grid">
+        <!-- Left Column - Portfolio Info -->
+        <div class="member-info">
+            <div class="member-image-container">
+                <img src="../assets/images/adrian.png" alt="Adrian" class="member-image">
+            </div>
 
-    <div class="profile-header">
-        <div class="profile-image">
-            <img src="../assets/images/adrian.png" alt="Adrian">
+            <h1 class="member-name">Adrian</h1>
+            <p class="member-role">Team Member</p>
+            
+            <div class="member-section">
+                <h3>About</h3>
+                <p class="member-bio">Dedicated to creating innovative solutions and collaborating with talented teams to drive meaningful results and success.</p>
+            </div>
+
+            <div class="member-section">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Project Management</span>
+                </div>
+            </div>
         </div>
-        <div class="profile-info">
-            <h1>Adrian</h1>
-            <p class="role">Team Member</p>
-            <p class="bio">Welcome to my portfolio page. I'm passionate about creating innovative solutions and working with talented teams to bring ideas to life.</p>
+
+        <!-- Right Column - Contact Form -->
+        <div class="member-contact">
+            <div class="contact-card">
+                <h2>Send a Message</h2>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Text Message</button>
+                </form>
+            </div>
         </div>
     </div>
-
-    <div class="contact-form">
-        <h2>Get in Touch</h2>
-        <div class="form-group">
-            <label>Name:</label>
-            <input id="name" type="text" placeholder="Your name">
-        </div>
-
-        <div class="form-group">
-            <label>Email:</label>
-            <input id="email" type="email" placeholder="Your email">
-        </div>
-
-        <div class="form-group">
-            <label>Message:</label>
-            <textarea id="message" placeholder="Your message" rows="5"></textarea>
-        </div>
-
-        <button onclick="sendMessage('Adrian')">Send Message</button>
-    </div>
-</div>
+</main>
 
 <!-- Firebase scripts (note the path: "../js/") -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
