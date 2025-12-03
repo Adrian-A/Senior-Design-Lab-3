@@ -24,6 +24,12 @@ async function attemptLogin() {
     });
 }
 
+// Logout function
+function logout() {
+    localStorage.removeItem("session");
+    window.location.href = "index.html";
+}
+
 // Protect restricted pages
 if (location.pathname.includes("protected") || location.pathname.includes("messages") || location.pathname.includes("vault_contents")) {
     if (localStorage.getItem("session") !== "authorized") {

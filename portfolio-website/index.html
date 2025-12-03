@@ -11,7 +11,7 @@
 <nav class="navbar">
     <div class="nav-container">
         <h1 class="nav-title">Senior Design Team 4</h1>
-        <a href="admin.html" class="vault-btn">The Vault</a>
+        <a href="#" onclick="goToVault(); return false;" class="vault-btn">The Vault</a>
     </div>
 </nav>
 
@@ -72,8 +72,17 @@
 <!-- UI Enhancements -->
 <script src="js/ui-enhancements.js"></script>
 
-<!-- Your JS -->
+<!-- Auth + Vault routing -->
 <script src="js/auth.js"></script>
+<script>
+    function goToVault() {
+        if (localStorage.getItem('session') === 'authorized') {
+            window.location.href = 'vault_contents.html';
+        } else {
+            window.location.href = 'admin.html';
+        }
+    }
+</script>
 
 </body>
 </html>
