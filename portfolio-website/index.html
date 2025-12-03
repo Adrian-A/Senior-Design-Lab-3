@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,14 +18,65 @@
 </nav>
 
 <div class="container">
-    <h1>Welcome to Our Team Portfolio</h1>
-    <p>Explore our projects, achievements, and contact us!</p>
+    <div class="hero">
+        <h1>Team Portfolio</h1>
+        <p>Meet our talented team members and explore their work</p>
+    </div>
+
+    <div class="team-grid">
+        <a href="members/bella.html" class="team-card">
+            <div class="team-card-image">
+                <img src="assets/images/bella.png" alt="Bella">
+            </div>
+            <div class="team-card-content">
+                <h3>Bella</h3>
+                <p class="role">Team Member</p>
+                <p class="description">Click to view full profile and contact</p>
+            </div>
+        </a>
+
+        <a href="members/adrian.html" class="team-card">
+            <div class="team-card-image">
+                <img src="assets/images/adrian.png" alt="Adrian">
+            </div>
+            <div class="team-card-content">
+                <h3>Adrian</h3>
+                <p class="role">Team Member</p>
+                <p class="description">Click to view full profile and contact</p>
+            </div>
+        </a>
+
+        <a href="members/seth.html" class="team-card">
+            <div class="team-card-image">
+                <img src="assets/images/seth.png" alt="Seth">
+            </div>
+            <div class="team-card-content">
+                <h3>Seth</h3>
+                <p class="role">Team Member</p>
+                <p class="description">Click to view full profile and contact</p>
+            </div>
+        </a>
+
+        <a href="members/emma.html" class="team-card">
+            <div class="team-card-image">
+                <img src="assets/images/emma.png" alt="Emma">
+            </div>
+            <div class="team-card-content">
+                <h3>Emma</h3>
+                <p class="role">Team Member</p>
+                <p class="description">Click to view full profile and contact</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <!-- Firebase scripts go here -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="js/firebase.js"></script>
+
+<!-- UI Enhancements -->
+<script src="js/ui-enhancements.js"></script>
 
 <!-- Your JS -->
 <script src="js/auth.js"></script>

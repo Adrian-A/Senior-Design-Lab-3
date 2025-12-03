@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Seth</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seth - Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -16,28 +18,47 @@
 </nav>
 
 <div class="container">
-    <h1>Seth</h1>
+    <a href="../index.html" class="back-btn">← Back to Team</a>
 
-    <img src="../assets/images/seth.png" width="200">
+    <div class="profile-header">
+        <div class="profile-image">
+            <img src="../assets/images/seth.png" alt="Seth">
+        </div>
+        <div class="profile-info">
+            <h1>Seth</h1>
+            <p class="role">Team Member</p>
+            <p class="bio">Welcome to my portfolio page. I'm passionate about creating innovative solutions and working with talented teams to bring ideas to life.</p>
+        </div>
+    </div>
 
-    <h2>Contact Form</h2>
+    <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <div class="form-group">
+            <label>Name:</label>
+            <input id="name" type="text" placeholder="Your name">
+        </div>
 
-    <label>Name:</label>
-    <input id="name">
+        <div class="form-group">
+            <label>Email:</label>
+            <input id="email" type="email" placeholder="Your email">
+        </div>
 
-    <label>Email:</label>
-    <input id="email">
+        <div class="form-group">
+            <label>Message:</label>
+            <textarea id="message" placeholder="Your message" rows="5"></textarea>
+        </div>
 
-    <label>Message:</label>
-    <textarea id="message"></textarea>
-
-    <button onclick="sendMessage('Seth')">Send Message</button>
+        <button onclick="sendMessage('Seth')">Send Message</button>
+    </div>
 </div>
 
 <!-- Firebase scripts (note the path: "../js/") -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="../js/firebase.js"></script>
+
+<!-- UI Enhancements -->
+<script src="../js/ui-enhancements.js"></script>
 
 <!-- Member-page scripts -->
 <script src="../js/messages.js"></script>
