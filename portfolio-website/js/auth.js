@@ -17,7 +17,7 @@ async function attemptLogin() {
 
         if (doc.data().hash === inputHash) {
             localStorage.setItem("session", "authorized");
-            window.location.href = "protected.html";
+            window.location.href = "vault_contents.html";
         } else {
             alert("Incorrect password.");
         }
@@ -25,7 +25,7 @@ async function attemptLogin() {
 }
 
 // Protect restricted pages
-if (location.pathname.includes("protected") || location.pathname.includes("messages")) {
+if (location.pathname.includes("protected") || location.pathname.includes("messages") || location.pathname.includes("vault_contents")) {
     if (localStorage.getItem("session") !== "authorized") {
         window.location.href = "admin.html";
     }

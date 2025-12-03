@@ -1,12 +1,6 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
+// Firebase v8 compatibility initialization (used by the app's inline script tags)
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyA8zkx6kq8RmZA92CC4oVbeNySBB2jKrpk",
   authDomain: "lab3-3f42a.firebaseapp.com",
   projectId: "lab3-3f42a",
@@ -16,6 +10,10 @@ const firebaseConfig = {
   measurementId: "G-3X3EV0562X"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// Initialize Firebase (v8 style). This file is loaded after the v8 CDN scripts.
+if (typeof firebase !== 'undefined' && !firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
+
+// Expose a global `db` variable pointing to Firestore for the rest of the app.
+var db = firebase.firestore();
