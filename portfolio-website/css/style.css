@@ -317,7 +317,7 @@ label {
 .member-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -326,10 +326,30 @@ label {
     flex-direction: column;
 }
 
+.member-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    color: rgba(255, 205, 0, 0.8);
+}
+
+.member-photo {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+}
+
 .member-image-container {
     width: 100%;
     aspect-ratio: 1 / 1;
-    margin-bottom: 2rem;
     border-radius: 0.625rem;
     border: 2px solid var(--color-border);
     overflow: hidden;
@@ -394,8 +414,10 @@ label {
 
 /* Contact Form Section */
 .member-contact {
+    grid-column: 1 / -1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .contact-card {
@@ -403,6 +425,7 @@ label {
     border: 2px solid var(--color-border);
     border-radius: 0.625rem;
     padding: 2rem;
+    width: 100%;
 }
 
 .contact-card h2 {
