@@ -526,3 +526,206 @@ label {
         padding: 0.4rem 0.8rem;
     }
 }
+
+/* Vault Styles */
+.vault-container {
+    max-width: 32rem;
+}
+
+.vault-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.vault-lock-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--color-card);
+    border: 2px solid var(--color-border);
+    margin-bottom: 1.5rem;
+}
+
+.vault-lock-icon i {
+    font-size: 2.5rem;
+    color: var(--color-foreground);
+}
+
+.vault-header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.vault-subtitle {
+    color: rgba(255, 205, 0, 0.7);
+    font-size: 1rem;
+}
+
+.vault-form-wrapper {
+    margin-bottom: 2rem;
+}
+
+.vault-form-card {
+    background-color: var(--color-card);
+    border: 2px solid var(--color-border);
+    border-radius: 0.625rem;
+    padding: 2rem;
+}
+
+.vault-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vault-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.vault-form .form-group label {
+    color: var(--color-foreground);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.vault-input {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    color: var(--color-foreground);
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.vault-input::placeholder {
+    color: rgba(255, 205, 0, 0.4);
+}
+
+.vault-input:focus {
+    outline: none;
+    border-color: var(--color-foreground);
+    box-shadow: 0 0 10px rgba(255, 205, 0, 0.2);
+    background-color: #0a0a0a;
+}
+
+.vault-error {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.vault-error.show {
+    display: block;
+}
+
+.vault-unlock-btn {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.vault-unlock-btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 205, 0, 0.3);
+}
+
+.vault-unlock-btn:active {
+    transform: translateY(0);
+}
+
+.vault-hint {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.vault-hint p {
+    color: rgba(255, 205, 0, 0.5);
+    font-size: 0.95rem;
+}
+
+.vault-unlocked-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.vault-success {
+    text-align: center;
+}
+
+.vault-success h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.vault-success p {
+    color: rgba(255, 205, 0, 0.7);
+    font-size: 1rem;
+}
+
+.vault-image-wrapper {
+    background-color: var(--color-card);
+    border: 2px solid var(--color-border);
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.vault-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vault-lock-button {
+    text-align: center;
+}
+
+/* Responsive Vault Styles */
+@media (max-width: 768px) {
+    .vault-container {
+        max-width: 100%;
+    }
+
+    .vault-header {
+        margin-bottom: 2rem;
+    }
+
+    .vault-lock-icon {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .vault-lock-icon i {
+        font-size: 2rem;
+    }
+
+    .vault-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .vault-form-card {
+        padding: 1.5rem;
+    }
+
+    .vault-form {
+        gap: 1rem;
+    }
+}
+

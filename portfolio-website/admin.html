@@ -1,35 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admin Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="members/bella.html">Bella</a>
-    <a href="members/adrian.html">Adrian</a>
-    <a href="members/seth.html">Seth</a>
-    <a href="members/emma.html">Emma</a>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="back-link">
+            <span class="arrow">←</span> Back to Team
+        </a>
+    </div>
 </nav>
 
-<div class="container">
-    <h1>Admin Login</h1>
+<main class="main-container vault-container">
+    <div class="vault-header">
+        <div class="vault-lock-icon">
+            <i class="fas fa-lock"></i>
+        </div>
+        <h1>The Vault</h1>
+        <p class="vault-subtitle">Enter the password to unlock exclusive content</p>
+    </div>
 
-    <label>Enter Password:</label>
-    <input type="password" id="passwordInput">
+    <!-- Locked State -->
+    <div id="vaultLocked" class="vault-form-wrapper">
+        <div class="vault-form-card">
+            <form id="vaultForm" class="vault-form" onsubmit="attemptLogin(); return false;">
+                <div class="form-group">
+                    <label for="passwordInput">Password</label>
+                    <input 
+                        id="passwordInput" 
+                        type="password" 
+                        class="vault-input" 
+                        placeholder="Enter password"
+                        autofocus
+                    >
+                    <p id="vaultError" class="vault-error"></p>
+                </div>
 
-    <button onclick="attemptLogin()">Login</button>
-</div>
+                <button type="submit" class="vault-unlock-btn">
+                    Unlock Vault
+                </button>
+            </form>
+
+            <div class="vault-hint">
+                <p>Hint: The password is "gold2024"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unlocked State (hidden by default) -->
+    <div id="vaultUnlocked" class="vault-unlocked-content" style="display: none;">
+        <div class="vault-success">
+            <h2>Vault Unlocked!</h2>
+            <p>Congratulations! You've gained access to our exclusive vault content.</p>
+        </div>
+
+        <div class="vault-image-wrapper">
+            <img 
+                id="vaultImage" 
+                src="https://images.unsplash.com/photo-1718752773195-c19c1c329156?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2YXVsdCUyMGdvbGR8ZW58MXx8fHwxNzY0NzI2MTI1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Vault treasure"
+                class="vault-image"
+            >
+        </div>
+
+        <div class="vault-lock-button">
+            <button id="lockVaultBtn" class="vault-unlock-btn">
+                Lock Vault Again
+            </button>
+        </div>
+    </div>
+</main>
 
 <!-- Firebase Scripts -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="js/firebase.js"></script>
 
-<!-- Auth logic -->
+<!-- Auth and messaging logic -->
 <script src="js/auth.js"></script>
+<script src="js/messages.js"></script>
 
 </body>
 </html>
