@@ -30,7 +30,7 @@ function loadMessages() {
         .get()
         .then(snapshot => {
             if (snapshot.empty) {
-                container.innerHTML = '<p>No messages found.</p>';
+                container.innerHTML = '';
                 return;
             }
 
@@ -42,13 +42,12 @@ function loadMessages() {
                 }
 
                 const div = document.createElement('div');
-                div.className = 'container';
-                div.style.marginBottom = '20px';
+                div.className = 'message-card';
                 div.innerHTML = `
-                    <p><strong>To:</strong> ${escapeHtml(m.recipient || '')}</p>
-                    <p><strong>From:</strong> ${escapeHtml(m.senderName || '')} (${escapeHtml(m.senderEmail || 'no-email')})</p>
-                    <p><strong>Message:</strong> ${escapeHtml(m.message || '')}</p>
-                    <p><em>${timeStr}</em></p>
+                    <p class="message-recipient"><strong>To:</strong> ${escapeHtml(m.recipient || '')}</p>
+                    <p class="message-sender"><strong>From:</strong> ${escapeHtml(m.senderName || 'Anonymous')} (${escapeHtml(m.senderEmail || 'no-email')})</p>
+                    <p class="message-content">${escapeHtml(m.message || '')}</p>
+                    <p class="message-timestamp">${timeStr}</p>
                 `;
 
                 container.appendChild(div);
@@ -56,7 +55,7 @@ function loadMessages() {
         })
         .catch(err => {
             console.error('Error loading messages:', err);
-            container.innerHTML = '<p>Error loading messages.</p>';
+            container.innerHTML = '<p style="text-align: center; color: rgba(255, 205, 0, 0.5);">Error loading messages.</p>';
         });
 }
 

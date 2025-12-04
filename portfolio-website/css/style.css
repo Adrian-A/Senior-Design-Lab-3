@@ -729,3 +729,141 @@ label {
     }
 }
 
+/* Vault Messages Page Styles */
+.vault-messages-container {
+    max-width: 64rem;
+}
+
+.vault-photo-wrapper {
+    margin-bottom: 3rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    border: none;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.vault-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vault-messages-section {
+    margin-top: 2rem;
+}
+
+.vault-messages-section h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.messages-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.message-card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.message-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(255, 205, 0, 0.1);
+}
+
+.message-card p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.message-card strong {
+    color: var(--color-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+.message-recipient {
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 205, 0, 0.3);
+}
+
+.message-sender {
+    color: rgba(255, 205, 0, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.message-content {
+    color: rgba(255, 205, 0, 0.9);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.message-timestamp {
+    color: rgba(255, 205, 0, 0.5);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.logout-btn {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-weight: var(--font-weight-medium);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 205, 0, 0.2);
+}
+
+/* Empty Messages State */
+.messages-grid:empty::before {
+    content: "No messages yet. Be the first to send one!";
+    display: block;
+    text-align: center;
+    color: rgba(255, 205, 0, 0.5);
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Responsive Vault Messages Page */
+@media (max-width: 768px) {
+    .vault-messages-container {
+        max-width: 100%;
+    }
+
+    .vault-messages-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .message-card {
+        padding: 1.25rem;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .logout-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
