@@ -313,6 +313,13 @@ label {
     transform: translateX(-4px);
 }
 
+/* Member Sections Container */
+.member-sections-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
 /* Member Grid Layout */
 .member-grid {
     display: grid;
@@ -324,6 +331,7 @@ label {
 .member-info {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .member-info-container {
@@ -344,7 +352,7 @@ label {
 .member-photo {
     width: 100%;
     height: 50%;
-    padding: 1rem;
+
 }
 
 .member-image-container {
@@ -410,6 +418,12 @@ label {
 .skill-tag:hover {
     background-color: var(--color-border);
     color: var(--color-background);
+}
+
+/* Member Contact Container */
+.member-contact-container {
+    width: 100%;
+    margin-top: 2rem;
 }
 
 /* Contact Form Section */

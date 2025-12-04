@@ -17,62 +17,67 @@
 </nav>
 
 <main class="main-container">
-    <div class="member-grid">
-        <!-- Left Column - Portfolio Info -->
-        <div class="member-photo">
-            <div class="member-image-container">
-                <img src="../assets/images/emma_profile.jpg" alt="Emma" class="member-image">
+    <div class="member-sections-container">
+        <div class="member-grid">
+            <!-- Left Column - Portfolio Info -->
+            <div class="member-photo">
+                <div class="member-image-container">
+                    <img src="../assets/images/emma_profile.jpg" alt="Emma" class="member-image">
+                </div>
+            </div>
+
+            <!-- Right Column - Member Info -->
+            <div class="member-info-container">
+                <div class="member-info">
+                    <h1 class="member-name">Emma Mackin</h1>
+                    <p class="member-role">Electrical Engineering</p>
+                    
+                    <div class="member-section">
+                        <h3>Favorites</h3>
+                        <ul class="bullet-list">
+                            <li>Animal: Pig and Toucan</li>
+                            <li>Color: Green</li>
+                            <li>Hobbies: Dancing, Cooking</li>
+                            <li>Food: Birria Tacos or Vodka Pasta</li>
+                            <li>Movie: Crazy Rich Asians</li>
+                            <li>Show: Gilmore Girls</li>
+                        </ul>
+                    </div>
+
+                    <div class="member-section">
+                        <h3>Accomplishment(s)</h3>
+                        <p class="member-bio">I played flute for 8 years and I'm the Regent of Theta Tau Omicron here on campus</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Right Column - Member Info -->
-         <div class="member-info-container">
-            <div class="member-info">
-                <h1 class="member-name">Emma</h1>
-                <p class="member-role">Electrical Engineering</p>
-                
-                <div class="member-section">
-                    <h3>Favorites</h3>
-                    <ul class="bullet-list">
-                        <li>Animal: Pig and Toucan</li>
-                        <li>Color: Green</li>
-                        <li>Hobbies: Dancing, Cooking</li>
-                        <li>Food: Birria Tacos or Vodka Pasta</li>
-                        <li>Movie: Crazy Rich Asians</li>
-                        <li>Show: Gilmore Girls</li>
-                    </ul>
-                </div>
+        <!-- Contact Form Section -->
+        <div class="member-contact-container">
+            <div class="member-contact">
+                <div class="contact-card">
+                    <h2>Send a Message</h2>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
 
-                <div class="member-section">
-                    <h3>Accomplishment(s)</h3>
-                    <p class="member-bio">I played flute for 8 years and I'm the Regent of Theta Tau Omicron here on campus</p>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Text Message</button>
+                    </form>
                 </div>
             </div>
-         </div>
-         
-    </div>    <!-- Contact Form Section -->
-        <div class="member-contact">
-        <div class="contact-card">
-            <h2>Send a Message</h2>
-            
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Text Message</button>
-            </form>
         </div>
     </div>
 </main>
