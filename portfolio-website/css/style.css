@@ -136,7 +136,6 @@ a {
 /* Team Card */
 .team-card {
     background-color: var(--color-card);
-    border: 2px solid var(--color-border);
     border-radius: 0.625rem;
     overflow: hidden;
     transition: all 0.3s ease;
